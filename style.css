@@ -7,10 +7,88 @@
 }
 
 body {
-    background-image: url(gambar/back2.png);
-    background-size: cover;
-    backdrop-filter: blur(40px);
+    background-color: #006653;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* body{
+  min-height: 100vh;
+  width: 100%;
+  background: #222D32;
+} */
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .registration{
+  display: none;
+}
+.container .forgot{
+  display:none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 50px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 10px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form input.button{
+  color: #fff;
+  background: #009579;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: #006653;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup a{
+  color: #009579;
+  cursor: pointer;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
+
 
 .body {
     display: flex;
@@ -19,7 +97,7 @@ body {
     height: 100vh;
     width: 100%;
 }
-
+/* 
 .container {
     position: relative;
     width: 360px;
@@ -84,6 +162,8 @@ body {
 }
 
 .nama,
+.email,
+.username,
 .password {
     position: relative;
     display: flex;
@@ -159,6 +239,7 @@ body {
     background-color: transparent;
     border-radius: 20px;
     padding-left: 10px;
+    margin: 10px;
     height: 40px;
     border: 1px solid #F8F8FF;
     outline: none;
@@ -168,6 +249,17 @@ body {
 .login input::placeholder {
     color: #F8F8FF;
 }
+
+
+#id-sukses {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #F8F8FF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    position: absolute;
+    display: none;
+} */
 
 .logofsi {
     position: absolute;
@@ -191,14 +283,4 @@ body {
 .creafsi {
     width: 140px;
     height: 150px;
-}
-
-#id-sukses {
-    font-size: 2em;
-    font-weight: bold;
-    text-transform: capitalize;
-    color: #F8F8FF;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    position: absolute;
-    display: none;
 }

@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>absensi</title>
+    <title>Absensi</title>
 </head>
 
 <body>
@@ -24,40 +24,60 @@
         <div class="logocreafsi">
             <img src="gambar/logocreafsi-removebg-preview.png" alt="" class="creafsi">
         </div>
-        <div class="container" id="id-login">
-            <form action="#" class="form-login">
-                <div class="head">
-                    <p>login</p>
-                </div>
-                <div class="login">
-                    <div class="nama">
-                        <span class="icon"><ion-icon class="logo" name="person-sharp"></ion-icon></span>
-                        <input type="text" class="nama" placeholder="username" required>
-                    </div>
-                    <div class="password">
-                        <span class="icon"><ion-icon class="logo" name="lock-closed"></ion-icon></span>
-                        <input type="password" class="password" placeholder="password" required>
-                    </div>
-                </div>
-                <div class="button">
-                    <button type="submit" class="submit" id="login-btn">login</button>
-                </div>
-                <div class="register">
-                    <p><span class="dont">don't</span> have an account? <a href="register.html">register</a></p>
-                </div>
-
-            </form>
-
-
-
-        </div>
-        <div id="id-sukses">
-            <p>selamat datang :)</p>
-        </div>
-    </div>
-
-    <script src="script.js" type="text/javascript"></script>
-
-</body>
+        <div class="container">
+            <input type="checkbox" id="check">
+            <div class="login form">
+              <header>Login</header>
+              <form action="#">
+                <input type="text" id='inUsr' placeholder="Enter your email">
+                <input type="password" id="inPass" placeholder="Enter your password">
+                <span class="signup">
+                  <a href="#" id="forgotLabel">Forgot password?</a>
+                </span>
+                <input type="button" class="button loginbtn" value="Login">
+              </form>
+              <div class="signup">
+                <span class="signup">Don't have an account?
+                  <a href="#" id="signupLabel">Signup</a>
+                </span>
+              </div>
+            </div>
+            <div class="registration form">
+              <header>Signup</header>
+              <form action="#">
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" id='username' placeholder="Enter your username">
+                <input type="text" id='email' placeholder="Enter your email">
+                <input type="password" id='password' placeholder="Create a password">
+                <input type="button" class="button signupbtn" value="Signup">
+              </form>
+              <div class="signup">
+                <span class="signup">Already have an account?
+                  <a href="#" id="loginLabel">Login</a>
+                </span>
+              </div>
+            </div>
+            <div class="forgot form" >
+              <header>Forgot Password</header>
+              <form action="#">
+                <input type="text" id='forgotinp' placeholder="Enter your email">
+                <input type="button" class="button forgotbtn" value="Submit">
+              </form>
+              <div class="signup">
+                <span class="signup">Don't have an account?
+                  <a href="#" id="signupLabel">Signup</a>
+                </span>
+              </div>
+              <div class="signup">
+                <span class="signup">Already have an account?
+                  <a href="#" id="loginLabel">Login</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./auth/account.js" type="module"></script>
 
 </html>
